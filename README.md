@@ -10,6 +10,12 @@ Certifique-se de ter o Node.js e o npm (ou yarn) instalados em sua máquina.
 
 1. Clone este repositório para sua máquina local:
 
+  ```
+bash
+    git clone https://github.com/devluan777/efood.git
+    ```
+
+
 
 2. Navegue até o diretório do projeto:
 
