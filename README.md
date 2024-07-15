@@ -29,4 +29,16 @@ Certifique-se de ter o Node.js e o npm (ou yarn) instalados em sua máquina.
     yarn install
     ```
 
+    4. Após a instalação das dependências, inicie o servidor de desenvolvimento:
+
+    ```bash
+    npm run dev
+    ```
+
+    ou
+
+    ```bash
+    yarn dev
+    ```
+
 
