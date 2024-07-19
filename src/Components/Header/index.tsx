@@ -22,37 +22,42 @@ const Header = () => {
     }
     return (
         <S.HeaderBar style={{ backgroundImage: `url(${fundoImg})` }}>
-            <S.HeaderRow>
-                <S.Hamburguer onClick={() => setMenuOpen(!isMenuOpen)}>
-                    <span />
-                    <span />
-                    <span />
-                </S.Hamburguer>
-                <nav>
-                    <S.Links>
-                        <S.LinkItem>
-                            <S.NavLink
-                                title="Clique aqui para ir para a página de restaurantes"
-                                to="/"
-                            >
-                                Restaurantes
-                            </S.NavLink>
-                        </S.LinkItem>
-                    </S.Links>
-                </nav>
-                <Link title="Clique aqui para ir para a página inicial" to="/">
-                    <img
-                        src={logo}
-                        alt="Logo EFOOD
-                    "
-                    />
-                </Link>
-                <S.CartButton onClick={openCart}>
-                    {totalItems}
-                    <span> - Produto(s) no carrinho</span>
-                    <img src={cartIcon} alt="Carrinho" />
-                </S.CartButton>
-            </S.HeaderRow>
+            <div className="container">
+                <S.HeaderRow>
+                    <S.Hamburguer onClick={() => setMenuOpen(!isMenuOpen)}>
+                        <span />
+                        <span />
+                        <span />
+                    </S.Hamburguer>
+                    <nav>
+                        <S.Links>
+                            <S.LinkItem>
+                                <S.NavLink
+                                    title="Clique aqui para ir para a página de restaurantes"
+                                    to="/"
+                                >
+                                    Restaurantes
+                                </S.NavLink>
+                            </S.LinkItem>
+                        </S.Links>
+                    </nav>
+                    <Link
+                        title="Clique aqui para ir para a página inicial"
+                        to="/"
+                    >
+                        <img
+                            src={logo}
+                            alt="Logo EFOOD
+                        "
+                        />
+                    </Link>
+                    <S.CartButton onClick={openCart}>
+                        {totalItems}
+                        <span> - Produto(s) no carrinho</span>
+                        <img src={cartIcon} alt="Carrinho" />
+                    </S.CartButton>
+                </S.HeaderRow>
+            </div>
             <S.NavMobile className={isMenuOpen ? 'is-open' : ''}>
                 <S.Links>
                     <S.LinkItem>

@@ -34,7 +34,7 @@ export const HeaderBar = styled.header`
 export const Links = styled.ul`
     margin-left: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 12px;
 
     @media (max-width: ${breakpoints.tablet}) {
@@ -54,8 +54,8 @@ export const LinkItem = styled.li`
     }
 `
 export const HeaderRow = styled.div`
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     max-width: 1024px;
     width: 100%;

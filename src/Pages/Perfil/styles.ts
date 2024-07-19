@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Colors } from '../../styles'
 
 export const RestauranteImagem = styled.div`
     position: relative;
@@ -9,8 +10,8 @@ export const RestauranteImagem = styled.div`
     background-size: cover;
     background-position: center;
     font-size: 32px;
-    color: #ffffff;
-    line-height: 37.5px;
+    color: ${Colors.white};
+    line-height: 38px;
 
     h4 {
         font-weight: 100;
