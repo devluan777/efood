@@ -9,12 +9,18 @@ export const RestauranteImagem = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-size: 32px;
-    color: ${Colors.white};
     line-height: 38px;
+
+    color: ${Colors.white};
+
+    h3 {
+        font-size: 32px;
+    }
 
     h4 {
         font-weight: 100;
+
+        font-size: 32px;
     }
     h2 {
         font-weight: 900;
